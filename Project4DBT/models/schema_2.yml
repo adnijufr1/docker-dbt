@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: delayeddeliveries
+    description: "Calculation of how many of my deliveries will be delayed due to snowfall"
+    columns:
+      - name: Country
+        description: "Country Name"
+        tests:
+          - unique
+          - not_null
+      - name: Postal_Code
+        description: "Unique Postal Code Number"
+      - name: date_valid_std
+        description: "Delivery Date"
+      - name: tot_snowfall_in
+        description: "Total Snowfall"
+      
+
